@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <script src="./assets/js/contact.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/contact.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <div class="person_info">
+            <div class="names">
+                <h2>First Name <span>*</span></h2>
+                <input class="first_name" type="text">
+                <h2 class="first_name_error"></h2>
+            </div>
+    
+            <div class="last_names">
+                <h2>Last Name <span>*</span></h2>
+                <input class="last_name" type="text">
+                <h2 class="last_name_error"></h2>
+            </div>
+        </div>
+
+
+        <h2>Email Address <span>*</span></h2>
+        <input class="email" type="text" required>
+        <h2 class="email_error"></h2>
+
+        <h2>Query Type <span>*</span></h2>
+
+        <div class="checkboxes">
+            <div class="checkbox_input checkbox1">
+                <input class="query_type general" type="checkbox">
+                <h2>General Enquiry</h2>
+            </div>
+    
+            <div class="checkbox_input checkbox2">
+                <input class="query_type support" type="checkbox">
+                <h2>Support Request</h2>
+            </div>
+        </div>
+        <h2 class="query_type_error"></h2>
+
+        <h2>Message *</h2>
+        <input class="message" type="text">
+        <h2 class="message_error"></h2>
+
+        <div class="consent">
+            <input class="input_consent" type="checkbox">
+            <h2>I consent to being contacted by the team <span>*</span></h2>
+        </div>
+        <h2 class="consent_error"></h2>
+
+        <button class="submit_button">Submit</button>
+
+        <ul>
+            <ol class="name_li"><p></p></ol>
+            <ol class="last_li"></ol>
+            <ol class="email_li"></ol>
+            <ol class="query_li"></ol>
+            <ol class="message_li"></ol>
+        </ul>
+
+
+    </div>
+</body>
+</html>

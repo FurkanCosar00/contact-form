@@ -1,0 +1,245 @@
+        /* CSS RESET */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font-family: "Karla", sans-serif;    
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+        /* CONTAİNER */
+
+body {
+    background-color: #E0F1E8;
+}
+  
+.container {
+    background-color: #FFFFFF;
+    width: 343px;
+    padding: 24px;
+    margin: 32px auto;
+    border-radius: 20px;
+}
+
+        /* TEXTS */
+
+h1 {
+    color: #2A4144;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+h2  {
+    color: #2A4144;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.checkbox_input {
+    margin: 16px 0px;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #2A4144;
+    padding: 12px 24px;
+    margin-bottom: 16px;
+    gap: 14px;
+}
+
+span {
+    color: #0C7D69;
+}
+
+.consent {
+    display: flex;
+    gap: 16px;
+}
+
+        /* İNPUTS */
+
+.first_name, .last_name, .email, .message, .checkbox1, .checkbox2 {
+    width: 295px;
+    height: 51px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #86A2A5;
+}
+
+.checkbox_input h2 {
+    margin: 0px;
+}
+
+.message {
+    width: 295px;
+    height: 240px;
+}
+
+input:hover {
+    border: 2px solid #0C7D69;
+}
+
+input:focus {
+    border: 2px solid #0C7D69;
+    outline: none;
+}
+
+.checkbox1:hover, .checkbox2:hover {
+    border: 2px solid #0C7D69;
+}
+
+ul {
+    margin-top: 30px;
+    padding: 0px;
+}
+
+ul p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.name_li {
+    padding: 0px;
+}
+
+.last_li {
+    padding: 0px;
+}
+.email_li {
+    padding: 0px;
+}
+.query_li {
+    padding: 0px;
+}
+
+.message_li {
+    padding: 0px;
+}
+
+        /* BUTTON */
+
+button {
+    background-color: #0C7D69;
+    color: #FFFFFF;
+    padding: 16px 118.5px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 40px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+}
+
+button:hover {
+    background-color: #074438;
+}
+
+        /* TABLET */
+
+@media (width >= 768px) {
+
+    .container {
+        width: 690px;
+        padding: 40px;
+        margin-top: 128px;
+    }
+
+    .person_info {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .first_name {
+        width: 297px;
+    }
+
+    .last_name {
+        width: 297px;
+    }
+
+    .email {
+        width: 610px;
+        
+    }
+
+    .message {
+        width: 610px;
+        height: 132px;
+
+    }
+
+    .checkboxes {
+        display: flex;
+        gap: 16px;
+    }
+
+    .checkbox_input {
+        width: 297px;
+    }
+
+    .submit_button {
+        padding: 16px 276px;
+        font-weight: 700;
+        line-height: 27px;
+        text-align: left;
+    }
+}
+
+@media (width > 1440px) {
+    
+    .container {
+        width: 736px;
+    }
+
+    .first_name {
+        width: 320px;
+    }
+
+    .last_name {
+        width: 320px;
+    }
+
+    .email {
+        width: 656px;
+    }
+
+    .message {
+        width: 656px;
+        height: 105px;
+        margin-bottom: 0;
+    }
+
+    .checkbox_input {
+        width: 320px;
+    }
+
+    .submit_button {
+        padding: 16px 299px;
+    }
+}
